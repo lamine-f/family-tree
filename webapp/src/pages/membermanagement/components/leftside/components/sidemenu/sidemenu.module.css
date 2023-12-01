@@ -1,0 +1,54 @@
+.content {
+    width: 90%;
+    padding-top: 1em ;
+}
+
+.wrapper{
+    cursor: pointer;
+}
+
+.wrapper:hover {
+
+}
+
+.container, .active {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 40px;
+    width: max-content;
+}
+
+
+.active {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+    background: #EBF1FC;
+    width: 100%;
+}
+
+.active div {
+    font-family: "Poppins SemiBold";
+}
+
+.iconContainer {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 900px) {
+
+
+    .content {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        padding: 10px 0;
+    }
+
+    .active {
+        width: max-content;
+    }
+
+}

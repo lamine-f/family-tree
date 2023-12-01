@@ -1,0 +1,154 @@
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    /*height: 100%;*/
+    height: 200px;
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    border-radius: 8px;
+    background:#FAFAFA;
+    position: relative;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userSelectedContainer {
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.deleteUser {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.input {
+    /*flex: 1;*/
+}
+
+.avatarContainer {
+    width: 123px;
+    height: 123px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inactive {
+    border: 1px solid red;
+}
+
+
+#active {
+    border: 1px solid green;
+}
+
+
+/*--------------------------------------------------------*/
+
+.SearchUserMenuWrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(134, 134, 134, 0.48);
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchUserMenuContainer {
+    width: 90%;
+    height: 85%;
+
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 18px;
+    padding: 2em;
+    gap: 2em;
+}
+
+.SearchUserMenuSearchBarContainer {
+    border-radius: 20em;
+    border: 3px solid #FAFAFA;
+    width: 90%;
+    height: 4em;
+    padding: 2px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    height: 10%;
+}
+
+.SearchUserMenuResultsContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+
+}
+
+.SearchUserMenuElement {
+    height: max-content;
+    width: max-content;
+    padding: 2em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    background: #FAFAFA;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.SearchUserMenuElement:active {
+ /*border: 2px solid blue;*/
+    background: greenyellow;
+
+}
+
+.SearchUserMenuAvatarContainer {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.SearchUserMenuAvatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

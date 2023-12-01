@@ -1,0 +1,64 @@
+.wrapper{
+    cursor: pointer;
+}
+
+.wrapper:hover {
+
+}
+
+.container {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 40px;
+
+    /* Elevation Medium */
+}
+
+.iconContainer {
+    width: 20px;
+    height: 20px;
+}
+
+.active {
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 40px;
+}
+
+.active div {
+    font-family: "Poppins SemiBold";
+}
+
+
+@media (max-width: 900px) {
+
+    .wrapper{
+    }
+
+    .container {
+        width: max-content;
+    }
+
+    .active {
+        width: max-content;
+    }
+    .bar {
+
+    }
+
+    .content {
+        display: flex;
+        padding: 0 0.5em;
+        overflow-x: auto;
+    }
+
+}

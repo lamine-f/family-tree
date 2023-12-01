@@ -1,0 +1,103 @@
+.root {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+
+
+  /*padding: 1px;*/
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 100%;
+
+
+
+  position: relative;
+}
+
+.male {
+  background: #a4ecff;
+}
+
+.female {
+  background: #fdaed8;
+}
+
+.isRoot {
+  border-color: rgba(0, 0, 0, .4);
+}
+
+.isHover {
+  border-color: rgba(0, 0, 0, .8);
+}
+
+.id {
+  font-size: 7px;
+  line-height: 1;
+  opacity: .5;
+}
+
+.sub {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  width: 14px;
+  height: 10px;
+  /*border: 1px solid rgba(0, 0, 0, .2);*/
+  border-radius: 4px 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.sub.male {
+  background: #fdaed8;
+}
+
+.sub.female {
+  background: #a4ecff;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  text-align: center;
+  font-size: 4px;
+  position: absolute;
+  bottom: 0;
+
+}
+
+
+.pictureContainer {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

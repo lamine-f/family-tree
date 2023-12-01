@@ -1,0 +1,13 @@
+.wrapper {
+    border-radius: 24px;
+    /*background: var(--white-white-80, rgba(255, 255, 255, 0.80));*/
+    background: rgba(255, 255, 255, 0.80);
+    height: 100%;
+    /*width: 248px;*/
+    width: 100%;
+    overflow: hidden;
+}
+
+.userProfil {
+
+}

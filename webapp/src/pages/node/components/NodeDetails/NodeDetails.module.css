@@ -1,0 +1,98 @@
+.root {
+
+  font-family: monospace;
+  font-size: 9px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  padding: 0;
+  padding-bottom: 15px;
+
+}
+
+
+.close {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  color: #888;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #666;
+}
+
+.informations {
+  gap: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 43%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 25%;
+}
+
+.title {
+  font-size: x-large;
+  font-weight: normal;
+}
+
+.relationsContainer {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  overflow-y: scroll ;
+}
+
+.cancelButton {
+  width: 90%;
+  height: 7%;
+}
+
+.pictureContainer {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 0 0 40px 40px;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+

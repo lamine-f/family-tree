@@ -1,0 +1,146 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 16px;
+    background: #FFF;
+
+    /* Elevation Medium */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+}
+
+section {
+    display: flex;
+    gap: 2px;
+    width: 100%;
+    padding: 16px;
+}
+
+.pictureSection {
+}
+
+.choosePictureContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    height: 200px;
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    border-radius: 8px;
+    background:#FAFAFA;
+}
+
+.avatarContainer {
+    width: 100px;
+    height: 100px;
+    /*border: 2px solid white;*/
+    background: #FAFAFA;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.informationsSection {
+    /*height: 75%;*/
+}
+
+.labelContainer, .inputsContainer {
+    width: 50%;
+
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+}
+
+.label {
+    color: #19161D;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.inputContainer {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 4px 10px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+input, select {
+    outline: none;
+    border: none;
+}
+
+.labelForInput {
+    font-size: 12px;
+}
+
+.submitButtonsSection {
+    width: 100%;
+    /*position: absolute;*/
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitButtonsContainer {
+    display: flex;
+    gap: 4px;
+}
+
+
+@media (max-width: 900px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .inputsContainer {
+        width: 90%;
+    }
+
+    .label {
+        text-align: center;
+    }
+
+}
+
+

@@ -1,0 +1,21 @@
+.wrapper {
+    width: 100%;
+    height: 72px;
+    padding: 3px 24px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #19161D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}

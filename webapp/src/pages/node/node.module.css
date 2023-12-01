@@ -1,0 +1,75 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background: white;*/
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+.tree {
+    /*background: #fff;*/
+    /*border: 1px solid #ddd;*/
+    border-radius: 14px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.reset {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    padding: 4px 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.details {
+    /*position: absolute;*/
+    /*left: 10px;*/
+    /*top: 60px;*/
+}
+
+@media (max-width: 600px) {
+
+}
+
+
+.TransformWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TransformContent {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 900px) {
+
+    .TransformWrapper {
+        width: 100%;
+        /*height: 100vh;*/
+        height: calc(100vh - 196px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
