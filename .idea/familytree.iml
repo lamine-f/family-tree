@@ -9,6 +9,13 @@
       <excludeFolder url="file://$MODULE_DIR$/mobileapp/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/mobileapp/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/mobileapp/build" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/persistance/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/persistance/target" />
+      <excludeFolder url="file://$MODULE_DIR$/mobileapp/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/mobileapp/android/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/mobileapp/linux/flutter/ephemeral" />
+      <excludeFolder url="file://$MODULE_DIR$/mobileapp/macos/Flutter/ephemeral" />
+      <excludeFolder url="file://$MODULE_DIR$/mobileapp/windows/flutter/ephemeral" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
