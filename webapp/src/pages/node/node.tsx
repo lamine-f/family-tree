@@ -56,7 +56,7 @@ React.memo(
     return (
       <Layout pageName={"Arbre généalogique"}>
         <div className={css.root}>
-          {nodes.length == 0 ? (<Loading/>) :(
+          {nodes.length == 0 ? (<Loading cancel={() => {}}/>) :(
               <TransformWrapper  >
                 <TransformComponent wrapperClass={css.TransformWrapper} wrapperStyle={{minHeight: NODE_HEIGHT+"px", background: "white", borderRadius: "20px", width: "100%", height: "100%", display: "flow"}} contentClass={css.TransformContent} >
                   <ReactFamilyTree

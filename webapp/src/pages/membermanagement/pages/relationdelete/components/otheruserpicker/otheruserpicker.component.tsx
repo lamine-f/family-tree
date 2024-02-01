@@ -129,7 +129,7 @@ const SearchUserMenu: React.FC<{handleAddUser(user: User, familyType: FamilyType
 
         <div className={css.SearchUserMenuResultsContainer}>
           {
-            loading? (<Loading/>)
+            loading? (<Loading cancel={() => {}}/>)
               : (usersWithRel.filter( (el, id) => (el.user.firstName+" "+el.user.lastName).toLowerCase().includes(searchValue.toLowerCase()) && (el.user.firstName+" "+el.user.lastName) != " " ).map((el, id) => {
                 return <div className={css.SearchUserMenuElement} key={id} onClick={() => handleUserPick(el.user, el.type, el.relation.type)} >
                   <div className={css.SearchUserMenuAvatarContainer} > <img className={css.SearchUserMenuAvatar} src={el.user.picture} /> </div>

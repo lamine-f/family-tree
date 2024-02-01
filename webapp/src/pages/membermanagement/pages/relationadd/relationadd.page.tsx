@@ -46,7 +46,7 @@ export const RelationAddPage: React.FC<RelationAddPageProps> = () => {
   const [users, setUsers] = useState<{leftUser:User | null, rightUser:User|null}>(contextUsers);
   const [data, setData] = useState<Dto>(contextData);
   const [reset, setReset] = useState<boolean>(true)
-  const [response, error, loading, fetch] = useAxios();
+  let [response, error, loading, fetch] = useAxios();
 
 
   useEffect( () => {
@@ -161,14 +161,11 @@ export const RelationAddPage: React.FC<RelationAddPageProps> = () => {
 
   return (
     <div className={css.wrapper} >
-      {loading && <Loading/>}
+      {loading && <Loading cancel={() => { alert("cc") }}  />}
 
       <div className={css.container} >
 
         <TopbarComponent title={"Ajouter une relation"}/>
-
-        {/*<hr style={{width: "90%"}}/>*/
-        }
 
 
         <section className={css.content}>

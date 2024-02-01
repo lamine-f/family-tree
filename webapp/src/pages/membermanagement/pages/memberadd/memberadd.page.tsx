@@ -143,7 +143,7 @@ export const MemberaddPage: React.FC<MemberaddPageProps> = () => {
   return (
 
     <div className={css.wrapper} >
-      {loading && <Loading/>}
+      {loading && <Loading cancel={() => {}}/>}
 
       <div className={css.container} >
 

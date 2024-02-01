@@ -167,7 +167,7 @@ export const MemberModifiedPage: React.FC<MemberModifiedPageProps> = () => {
 
   return (
     <div className={css.wrapper} >
-      {loading && <Loading/>}
+      {loading && <Loading cancel={() => {}}/>}
 
       <TopbarComponent title={"Modifier un membre"}/>
       <div className={css.container} >

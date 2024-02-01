@@ -125,7 +125,7 @@ const SearchUserMenu: React.FC<{handleAddUser(user: User):any, cancel():void}> =
 
         <div className={css.SearchUserMenuResultsContainer}>
           {
-            loading? (<Loading/>)
+            loading? (<Loading cancel={ () => {} }/>)
               : (users.filter( (user, id) => (user.firstName+" "+user.lastName).toLowerCase().includes(searchValue.toLowerCase()) && (user.firstName+" "+user.lastName) != " " ).map((user, id) => {
                   return <div className={css.SearchUserMenuElement} key={id} onClick={() => handleUserPick(user)} >
                     <div className={css.SearchUserMenuAvatarContainer} > <img className={css.SearchUserMenuAvatar} src={user.picture} /> </div>

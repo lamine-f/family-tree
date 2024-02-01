@@ -173,7 +173,7 @@ export const RelationDeletePage: React.FC<RelationDeletePageProps> = () => {
 
   return (
     <div className={css.wrapper} >
-      {loading && <Loading/>}
+      {loading && <Loading cancel={() => {}}/>}
 
       <div className={css.container} >
 
