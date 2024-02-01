@@ -58,7 +58,7 @@ React.memo(
         <div className={css.root}>
           {nodes.length == 0 ? (<Loading/>) :(
               <TransformWrapper  >
-                <TransformComponent wrapperClass={css.TransformWrapper} wrapperStyle={{minHeight: NODE_HEIGHT+"px", background: "white", borderRadius: "20px"}} contentClass={css.TransformContent} >
+                <TransformComponent wrapperClass={css.TransformWrapper} wrapperStyle={{minHeight: NODE_HEIGHT+"px", background: "white", borderRadius: "20px", width: "100%", height: "100%", display: "flow"}} contentClass={css.TransformContent} >
                   <ReactFamilyTree
                     nodes={nodes}
                     rootId={rootId}

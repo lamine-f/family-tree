@@ -79,7 +79,7 @@ public class UserRestController {
         if ( picture == null ) {
             return ResponseEntity.status(200).body(Map.of("dataResponse", userDTOSaved ));
         }else {
-            this.uploadFileService.saveFile(picture, "/workspace/familytree/frontend/public/pictures/", userSaving.getId().toString());
+            this.uploadFileService.saveFile(picture, "/workspace/familytree/webapp/public/pictures/", userSaving.getId().toString());
         }
         return ResponseEntity.status(200).body(Map.of("dataResponse", userDTOSaved ));
     }
@@ -101,7 +101,7 @@ public class UserRestController {
         try {
             User userModified = serviceUser.modify(firstName, lastName, gender, Integer.valueOf(id));
             if ( picture != null ) {
-                this.uploadFileService.saveFile(picture, "/workspace/familytree/frontend/public/pictures/", userModified.getId().toString());
+                this.uploadFileService.saveFile(picture, "/workspace/familytree/webapp/public/pictures/", userModified.getId().toString());
 //                userSaving.setPicture("/pictures/"+userSaving.getId());
 //                UserDTO userDTOSaved = this.serviceUser.toDTO( this.userRepository.save(userSaving) );
             }

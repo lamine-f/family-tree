@@ -51,9 +51,9 @@
   .bar {
     height: 100px;
     width: 100%;
-    position: sticky;
-    top: 0px;
-    z-index: 4;
+    /*position: sticky;*/
+    /*top: 0px;*/
+    /*z-index: 4;*/
   }
 
   .content {
